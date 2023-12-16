@@ -40,6 +40,21 @@ If the `p_value` the null hypothese is that the series are uncorrelated.
 
 squaring pearson's R gives the percent variation in one sample in the other.
 
+### ANOVA
+
+The null hypothesis under an ANVOA test is that the mean in several groups is the same. The alternative hypothesis is that at least one mean is different. There are several assumptions:
+- responses for each factor (group) are normally distributed.
+- responses for each factor have the same variance. (Levene test - see below)
+
+An ANOVA test compares the mean response in each factor (group). The response variable should be numerical. The factor is a categorical. 
+
+### Levene test
+
+This test if variance in groups (factors) are the same. 
+
+`s, p_value = stats.levene(data1, data2)`
+
+
 
 
 
