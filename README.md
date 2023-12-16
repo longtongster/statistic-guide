@@ -1,4 +1,4 @@
-# statistic-guide
+# Guide on statistics
 Repo used to provide an overview of statistical tests
 
 #### ToDo
@@ -46,15 +46,19 @@ The null hypothesis under an ANVOA test is that the mean in several groups is th
 - responses for each factor (group) are normally distributed.
 - responses for each factor have the same variance. (Levene test - see below)
 
-An ANOVA test compares the mean response in each factor (group). The response variable should be numerical. The factor is a categorical. 
+the one way anova 
+
+`s, p_value = stats.f_oneway(data1, data2, data3)`
+
+If the p_value is lower than the confidence level we reject the null huypotheses.
 
 ### Levene test
 
-This test if variance in groups (factors) are the same. 
+This test if variance in groups (factors) are the same. This test is on two groups not more. The null hypotheses is that the variances are the same.  
 
 `s, p_value = stats.levene(data1, data2)`
 
-
+If the p_value is lower than the confidence level we reject the null huypotheses.
 
 
 
