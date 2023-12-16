@@ -1,8 +1,10 @@
 # statistic-guide
 Repo used to provide an overview of statistical tests
 
-#### ToDO
+#### ToDo
 - confounding - what is it
+- conditions that hold for certain tests
+- autocorrelation
 
 ## type of tests
 
@@ -17,7 +19,7 @@ the statistic is in `result.statistic` the critical values are in `result.critic
 
 If the statisc is larger than a critical value the null hypothesis is rejected with that confidence level.
 
-### normal distribution
+### Normal distribution in SciPy
 
 If your data is normal (e.g after using the anderson test) you can fit the mean and standard deviation using:
 
@@ -27,6 +29,17 @@ If your data is normal (e.g after using the anderson test) you can fit the mean 
 use the .cdf method to get the cumulative distibution function
 
 `prob = stats.norm.cdf(70000, loc=mu, scale=std)`
+
+### Pearson's R in SciPy
+
+Pearson's measure linear correlation.One can calculate pearson's R in SciPy using:
+
+`r, p_value = stats.pearsonsr(data1, data2)`
+
+If the `p_value` the null hypothese is that the series are uncorrelated. 
+
+squaring pearson's R gives the percent variation in one sample in the other.
+
 
 
 
