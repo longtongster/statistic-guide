@@ -6,7 +6,13 @@ Repo used to provide an overview of statistical tests
 - conditions that hold for certain tests
 - autocorrelation
 
-## type of tests
+## Parametric tests
+
+For these test the underlying data has to be normally distributed. 
+- Independent sample t-test
+- ANOVA
+- Paired sample t-test
+- Pearson's R
 
 ### test for normality 
 The Anderson-Darling test can be used to determine if you data is distributed normal.
@@ -60,6 +66,27 @@ This test if variance in groups (factors) are the same. This test is on two grou
 
 If the p_value is lower than the confidence level we reject the null huypotheses.
 
+## Non-parametric test
 
+- These do not require the data to be normal
+- are sometimes less powerfull.
+- useful for ranked order
 
-- mean - follow t-distributioin
+Examples:
+- Wilcoxon-Man-Whithney U test
+- Krusal-Wallis test
+- Mood's median test
+- Kendall's tau
+
+### Mood's median test
+
+Compares medians from two paired measurement. The paired measurments can be seen as two different features in a matrix
+
+`s, p_value, m, table = stats.median_test(data1, data2)`
+
+### Kendall's tau
+
+Works with ranking data which is not normally distributed. takes values between -1 and 1.  
+
+`tau, p_value = stats.kendalltau(data1, data2)`
+
