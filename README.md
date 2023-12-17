@@ -14,7 +14,7 @@ Effect size for categorical variables:
 - n = total numbers
 - d = degrees of freedom = min(rows-1, cols-1)
 
-$$ \text{Cramer's V} = \sqrt{\frac{1}/{n}}$$
+$$ \text{Cramer's V} = \sqrt{\frac{chi^2/n}{d}}$$
 
 #### ToDo
 - confounding - what is it
