@@ -1,5 +1,20 @@
 # Guide on statistics
-Repo used to provide an overview of statistical tests
+
+Repo used to provide an overview of statistical tests.
+
+### Effects
+A measure of strenght between two variables. The `p_value` measures if there is a relation, the effect size is the strenght of the relationship.
+
+One measure to calculate `Cohen's d`. 
+
+Effect size of pearson's correlation r is $r^2$.
+
+Effect size for categorical variables:
+- Chi-square statistic from contingency table
+- n = total numbers
+- d = degrees of freedom = min(rows-1, cols-1)
+
+$$ \text{Cramer's V} = \sqrt{\frac{1}/{n}}$$
 
 #### ToDo
 - confounding - what is it
