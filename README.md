@@ -12,7 +12,7 @@ Repo used to provide an overview of statistical tests.
 ### Effects
 A measure of strenght between two variables. The `p_value` measures if there is a relation, the effect size is the strenght of the relationship.
 
-One measure to calculate `Cohen's d`. 
+One measure to calculate `Cohen's d`. This measure seems similar or the same to the t-test value used to test if differences in mean between two samples is the same. 
 
 Effect size of pearson's correlation r is $r^2$.
 
@@ -36,11 +36,15 @@ use this `chi_2` in the above formula.
 **The power of a test**:
 _if the alternative hypothesis (Ha) is true, how likely is our test to reject the null hypothesis (H0) givn the data we have suplied it?_
 
-in the scipy stats module there are several ways to calculate the power of a test, e.g. `stats.power.TTestIndPower(effect_size=0.2, nobs1=100, alpha=0.05)`.
+in the scipy stats module there are several ways to calculate the power of a test, e.g. 
+
+`stats.power.TTestIndPower(effect_size=0.2, nobs1=100, alpha=0.05)`.
 
 you can also solve the number of observations to meet a certain power
 
 `nobs1 = TTestIndPower().solve_power(effect_size=0.2, nobs1=None, alpha=0.05, power=0.8)`
+
+one can set the `effect_size` to the outcome Cohen's d test.
 
 ## Parametric tests
 
@@ -140,5 +144,3 @@ If your data is normal (e.g after using the anderson test) you can fit the mean 
 use the .cdf method to get the cumulative distibution function
 
 `prob = stats.norm.cdf(70000, loc=mu, scale=std)`
-
->>>>>>> 774d8a6dfe154f1ad7b41540ec1af41bf325f8c7
