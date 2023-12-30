@@ -1,9 +1,20 @@
 # Guide on statistics
 
-Repo used to provide an overview of statistical tests.
+The objective of this repo is to have a summary on basic statistics and statistical test. 
+
+## Genereric topics
+
+### Types of Missing Data
+
+- Missing completely at random (MCAR). When data are MCAR, the fact that the data are missing is independent of the observed and unobserved data.15 In other words, no systematic differences exist between participants with missing data and those with complete data
+- Missing at random (MAR). When data are MAR, the fact that the data are missing is systematically related to the observed but not the unobserved data.15 For example, a registry examining depression may encounter data that are MAR if male participants are less likely to complete a survey about depression severity than female participants. That is, if probability of completion of the survey is related to their sex (which is fully observed) but not the severity of their depression, then the data may be regarded as MAR
+- Missing not at random (MNAR). When data are MNAR, the fact that the data are missing is systematically related to the unobserved data, that is, the missingness is related to events or factors which are not measured by the researcher. 
 
 #### ToDo
 - confounding - what is it
+- stats.zscore for outliers check
+- all these dependence internal validaty, external, etc
+- MCAR, missing complete at random, not at random etc
 - conditions that hold for certain tests
 - autocorrelation
 - maybe add at a later stage how many observations we should have for each test or group
