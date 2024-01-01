@@ -2,14 +2,6 @@
 
 The objective of this repo is to have a summary on basic statistics and statistical test. 
 
-## Genereric topics
-
-### Types of Missing Data
-
-- Missing completely at random (MCAR). When data are MCAR, the fact that the data are missing is independent of the observed and unobserved data.15 In other words, no systematic differences exist between participants with missing data and those with complete data
-- Missing at random (MAR). When data are MAR, the fact that the data are missing is systematically related to the observed but not the unobserved data.15 For example, a registry examining depression may encounter data that are MAR if male participants are less likely to complete a survey about depression severity than female participants. That is, if probability of completion of the survey is related to their sex (which is fully observed) but not the severity of their depression, then the data may be regarded as MAR
-- Missing not at random (MNAR). When data are MNAR, the fact that the data are missing is systematically related to the unobserved data, that is, the missingness is related to events or factors which are not measured by the researcher. 
-
 #### ToDo
 - confounding - what is it
 - stats.zscore for outliers check
@@ -19,6 +11,30 @@ The objective of this repo is to have a summary on basic statistics and statisti
 - autocorrelation
 - maybe add at a later stage how many observations we should have for each test or group
 - rearrange the items below in logical order
+
+
+## Genereric topics
+
+### Types of Missing Data
+
+- Missing completely at random (MCAR). When data are MCAR, the fact that the data are missing is independent of the observed and unobserved data.15 In other words, no systematic differences exist between participants with missing data and those with complete data
+- Missing at random (MAR). When data are MAR, the fact that the data are missing is systematically related to the observed but not the unobserved data.15 For example, a registry examining depression may encounter data that are MAR if male participants are less likely to complete a survey about depression severity than female participants. That is, if probability of completion of the survey is related to their sex (which is fully observed) but not the severity of their depression, then the data may be regarded as MAR
+- Missing not at random (MNAR). When data are MNAR, the fact that the data are missing is systematically related to the unobserved data, that is, the missingness is related to events or factors which are not measured by the researcher. 
+
+### Confounding
+
+- In causal inference, a confounder (also confounding variable, confounding factor, extraneous determinant or lurking variable) is a variable that influences both the dependent variable and independent variable, causing a spurious association.
+
+### Statistical Validity
+Statistical validity can be defined as the extent to which drawn conclusions of a research study can be considered accurate and reliable from a statistical test. To achieve statistical validity, it is essential for researchers to have sufficient data and also choose the right statistical approach to analyze that data.
+
+- Construct Validity: it ensures that the actual experimentation and data collection conforms to the theory that is being studied.
+- Content Validity: this validity ensures that the test or questionnaire that is prepared completely covers all aspects of the variable being studied.
+- Face Validity: this type of validity estimates whether the given experiment actually mimics the claims that are being verified.
+- Conclusion Validity: this validity ensures that the conclusion is achieved from the data sets obtained from the experiment are actually correct and justified without any violations.
+- Internal Validity: it is a measure of the relationship between cause and effect being studied in the experiment.
+- External Validity: this validity is a measure of how to apply the results from a particular experiment to more general populations. Furthermore, it informs the analyst whether or not to generalize the results of a particular experiment to all other populations or to some populations with particular characteristics.
+
 
 ### Effects
 A measure of strenght between two variables. The `p_value` measures if there is a relation, the effect size is the strenght of the relationship.
