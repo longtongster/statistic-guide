@@ -3,10 +3,7 @@
 The objective of this repo is to have a summary on basic statistics and statistical test. 
 
 #### ToDo
-- confounding - what is it
 - stats.zscore for outliers check
-- all these dependence internal validaty, external, etc
-- MCAR, missing complete at random, not at random etc
 - conditions that hold for certain tests
 - autocorrelation
 - maybe add at a later stage how many observations we should have for each test or group
@@ -137,6 +134,13 @@ a one-sided test can be performed with scipy
 `t_test = stats.ttest_ind(group1, group2, alternative='less')`
 
 `t_test.p_value < 0.05` 
+
+### Paired t-test
+
+Can be used to test for differences in mean for paired data. Here the data is not independendent (e.g. election outcomes of the same state in different years.) Here you calculate the difference for each obervations and than take the mean of the differences
+
+$$ t = \frac{\bar{x}_diff-mu}{y} $$ 
+with degrees of freedom $df=n_diff -1$
 
 ### test for normality 
 The Anderson-Darling test can be used to determine if you data is distributed normal.
