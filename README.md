@@ -139,8 +139,8 @@ a one-sided test can be performed with scipy
 
 Can be used to test for differences in mean for paired data. Here the data is not independendent (e.g. election outcomes of the same state in different years.) Here you calculate the difference for each obervations and than take the mean of the differences
 
-$$ t = \frac{x}{y} $$ 
-with degrees of freedom $df=n_diff -1$
+$$ t = \frac{chi^2/n}{d} $$ 
+with degrees of freedom $df=n_{diff} -1$
 
 ### test for normality 
 The Anderson-Darling test can be used to determine if you data is distributed normal.
