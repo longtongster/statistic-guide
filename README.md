@@ -57,8 +57,6 @@ The objective of this repo is to have a summary on basic statistics and statisti
 - Establish association, not causation
   - Effects can be confounded by factors that got certain people into the control or treatment group
   - There are ways to control for confounders to get more reliable conclusions about association.
- 
-  - 
 
 ### Confounding
 
@@ -74,6 +72,14 @@ Statistical validity can be defined as the extent to which drawn conclusions of 
 - Internal Validity: it is a measure of the relationship between cause and effect being studied in the experiment.
 - External Validity: this validity is a measure of how to apply the results from a particular experiment to more general populations. Furthermore, it informs the analyst whether or not to generalize the results of a particular experiment to all other populations or to some populations with particular characteristics.
 
+### Sampling techniques:
+1. Simple random sampling - each case of the population has the same probability of being selected.
+2. Systematic sampling - Randomly select the first case then select every k-th case.
+3. Stratified sampling - guarantees that the sample will be representative on the selected (stratifiying) variables. (e.g. group population by nationality and then sample the same fraction for each nationality)
+4. Cluster sampling - take the sample from a cluster (e.g. a US state) and use that sample from the state to infer results on the total US populations.
+
+### Sampling distribution:
+A sampling distribution is the probabilistic distribution of a statistic for all possible samples of a given size (N). Every application of inferential statistics involves three distributions: population, sampling and sample.
 
 ### Effects
 A measure of strenght between two variables. The `p_value` measures if there is a relation, the effect size is the strenght of the relationship.
