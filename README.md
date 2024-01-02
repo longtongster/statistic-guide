@@ -137,10 +137,23 @@ a one-sided test can be performed with scipy
 
 ### Paired t-test
 
-Can be used to test for differences in mean for paired data. Here the data is not independendent (e.g. election outcomes of the same state in different years.) Here you calculate the difference for each obervations and than take the mean of the differences
+Here it is key that data is paired. So we have observations from the same respondents for example different years (e.g election outcomes in 2012 and 2016 of the same state). The test is used to test for differences in mean for paired data. Here the data is not independendent (e.g. election outcomes of the same state in different years.) Here you calculate the difference for each obervations and than take the mean of the differences
 
 $$ t = \frac{chi^2/n}{d} $$ 
 with degrees of freedom $df=n_{diff} -1$
+
+below the H0 is that the difference is zero y=0.
+
+```import pingouin
+pingouin.ttest(x=sample_data['diff'], y=0, alternative="less")
+```
+
+alternatively one use pandas series directly
+
+```import pingouin
+pingouin.ttest(x=sample_data['colA'], y=sample_data['colB'], paired=True, alternative="less")
+```
+
 
 ### test for normality 
 The Anderson-Darling test can be used to determine if you data is distributed normal.
