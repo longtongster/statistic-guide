@@ -21,6 +21,45 @@ The objective of this repo is to have a summary on basic statistics and statisti
 - Missing at random (MAR). When data are MAR, the fact that the data are missing is systematically related to the observed but not the unobserved data.15 For example, a registry examining depression may encounter data that are MAR if male participants are less likely to complete a survey about depression severity than female participants. That is, if probability of completion of the survey is related to their sex (which is fully observed) but not the severity of their depression, then the data may be regarded as MAR
 - Missing not at random (MNAR). When data are MNAR, the fact that the data are missing is systematically related to the unobserved data, that is, the missingness is related to events or factors which are not measured by the researcher. 
 
+### Experiments
+
+#### Definitions:
+- Treatment: explanatory/independent variables
+- Response: response/dependent variable
+
+#### Controlled experiments:
+- participants are assinged by researchers to either treatment group or control group
+  - treatment group sees advertisements
+  - control group does not
+- Groups should be comparable, so that causation can be inferred
+- If groups are not comparable this could lead to confounding (bias)
+  - Treatment group average age (e.g. 25)
+  - Control group average age (e.g. 50
+  - age is a potential confounder
+
+#### The golden standard of experiments:
+- Randomized controlled trial
+  - Particiants are assigned to treatment/control ranomly, not based on any other characteristics.
+  -  Choosing randomly helps ensure that groups are comparable
+- Placebo
+  - Resembles treatment, but has not effect
+  - Participants will not know which group they're in.
+  - In clinical trials, a sugar pill ensures that the effect of the drug is actually due to the drug itself and not the idea of receiving the drug. 
+- Double-blind trial
+  - Person administring the treatment/running the study doesn't know whether the treamt metn is real of placebo.
+  - Prevents bias in the response and/or analysis of results. 
+
+#### Observational studies
+- Participants are not assigned randomly to groups
+  - Participants assing themselves, usually based on pre-existing characteristics.
+- Many research questions are not conducive to a controlled experiment
+  - e.g. you cannot force someone to smoke
+- Establish association, not causation
+  - Effects can be confounded by factors that got certain people into the control or treatment group
+  - There are ways to control for confounders to get more reliable conclusions about association.
+ 
+  - 
+
 ### Confounding
 
 - In causal inference, a confounder (also confounding variable, confounding factor, extraneous determinant or lurking variable) is a variable that influences both the dependent variable and independent variable, causing a spurious association.
