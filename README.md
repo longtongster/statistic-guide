@@ -4,6 +4,8 @@ The objective of this repo is to have a summary on basic statistics and statisti
 
 #### ToDo
 - stats.zscore for outliers check
+- idea is to create a separate page that contains derivations for most test statistics (e.g. how do we get the that the mean of a sample with unknown variance is t distributed) 
+- derive the results of difference in means (see inferential statistics) with the pooled and non pooled versions independent samples of two groups (add this (see above))
 - conditions that hold for certain tests
 - autocorrelation
 - maybe add at a later stage how many observations we should have for each test or group
@@ -117,7 +119,14 @@ one can set the `effect_size` to the outcome Cohen's d test.
 
 ## Parametric tests
 
-For these test the underlying data has to be normally distributed. 
+parametrric tests generally require assumptions about the shape and parameters of the distibution. (e.g. test the underlying data has to be normally distributed.)
+ 
+- z-test
+  - can be used to test a statistic on proportions or different
+  - can be used to test if proportions of two groups are the same
+  - can be used to test mean of a population given the standard deviation is known
+- t-test
+- f-test
 - Independent sample t-test
 - ANOVA
 - Paired sample t-test
