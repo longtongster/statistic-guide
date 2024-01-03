@@ -124,6 +124,7 @@ parametrric tests generally require assumptions about the shape and parameters o
 - z-test
   - can be used to test a statistic on proportions or different
   - can be used to test if proportions of two groups are the same
+  - can be used to test proportions of two groups with paired data. 
   - can be used to test mean of a population given the standard deviation is known
 - t-test
 - f-test
