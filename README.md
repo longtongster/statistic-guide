@@ -102,6 +102,25 @@ Using python we can use
 
 use this `chi_2` in the above formula.
 
+### Relation between distributions
+
+If $Z$ is standard normal then $T=Z^2$ is a chi-square
+
+## t-distribution 
+
+Let $Z$ and $V$ be independent random variables following a standard normal distribution and a chi-squared distribution with $\nu$ degrees of freedom, respectively
+\begin{split}
+Z &\sim \mathcal{N}(0,1) \\
+V &\sim \chi^{2}(\nu) \; .
+\end{split}
+
+An F-distribute random variable is defined as the ration of two `chi-squared` random variables, divided by their degrees of freedom. 
+
+$$X \sim \chi^2(u), \; Y \sim \chi^2(v) \quad \Rightarrow \quad F = \frac{X/u}{Y/v} \sim \mathrm{F}(u,v)$$
+
+where $X$ and $Y$ are independent of each other 
+
+
 # Hypothesis Testing
 
 **The power of a test**:
