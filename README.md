@@ -2,6 +2,9 @@
 
 The objective of this repo is to have a summary on basic statistics and statistical test. 
 
+references:
+- https://real-statistics.com/students-t-distribution/two-independent-samples-t-test/two-sample-t-test-advanced/
+
 #### ToDo
 - stats.zscore for outliers check
 - idea is to create a separate page that contains derivations for most test statistics (e.g. how do we get the that the mean of a sample with unknown variance is t distributed) 
